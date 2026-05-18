@@ -564,6 +564,147 @@ section {
   font-size: 1.05rem;
 }
 
+/* GAMING SECTION */
+.gaming-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+.gaming-intro-text p {
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+  font-size: 1.02rem;
+}
+.gaming-intro-text p strong { color: var(--accent); }
+.gaming-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.gaming-feat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: border-color 0.3s;
+}
+.gaming-feat:hover { border-color: rgba(0,255,157,0.25); }
+.gaming-feat-icon { font-size: 1.5rem; flex-shrink: 0; }
+.gaming-feat-text { font-size: 0.9rem; }
+.gaming-feat-text strong { display: block; margin-bottom: 0.15rem; }
+.gaming-feat-text span { color: var(--muted); font-size: 0.82rem; }
+
+/* POLL */
+.poll-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.poll-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3));
+}
+.poll-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+  direction: rtl;
+}
+.poll-sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 1.8rem;
+  direction: rtl;
+}
+.poll-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.poll-option {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  cursor: none;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  width: 100%;
+  color: var(--text);
+  font-family: 'Noto Sans Hebrew', sans-serif;
+  font-size: 0.95rem;
+}
+.poll-option:hover { border-color: rgba(0,255,157,0.3); background: var(--surface2); }
+.poll-option.voted { border-color: var(--accent); }
+.poll-option-left { display: flex; align-items: center; gap: 0.8rem; }
+.poll-option-icon { font-size: 1.3rem; }
+.poll-bar-wrap {
+  margin-top: 0.5rem;
+  background: var(--bg);
+  border-radius: 4px;
+  height: 5px;
+  overflow: hidden;
+  display: none;
+}
+.poll-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.6s cubic-bezier(0.34,1.56,0.64,1);
+  width: 0%;
+}
+.poll-pct {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent);
+  min-width: 36px;
+  text-align: right;
+  display: none;
+  direction: ltr;
+}
+.poll-discord-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.poll-discord-note a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.poll-discord-note a:hover { text-decoration: underline; }
+.poll-total {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1rem;
+  direction: ltr;
+}
+@media (max-width: 768px) {
+  .gaming-intro { grid-template-columns: 1fr; }
+}
+
 /* FOOTER */
 footer {
   position: relative;
@@ -815,6 +956,7 @@ footer {
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#content">Content</a></li>
+    <li><a href="#gaming">Gaming 🎮</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="admin-btn-nav" onclick="openAdminLogin()">[ admin ]</button>
@@ -941,6 +1083,105 @@ footer {
         <span>📭</span>
         עדיין אין תוכן — צור קשר עם האדמין להוספת קישורים וסרטונים
       </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- GAMING -->
+<section id="gaming">
+  <div class="reveal">
+    <p class="section-title">Gaming Corner</p>
+    <h2 class="section-heading">פינת הגיימינג 🎮</h2>
+    <div class="gaming-intro">
+      <div class="gaming-intro-text">
+        <p>בקהילת <strong>Scriptix</strong> לא רק כותבים קוד — גם משחקים. אנחנו קהילה של מתכנתים שאוהבים גיימינג, ויודעים שהמשחקים הכי טובים הם עם אנשים שמבינים גם קוד וגם קריה.</p>
+        <p>בפינת הגיימינג שלנו תמצאו <strong>טורנירים</strong> שמאורגנים בדיסקורד, <strong>סשנים משותפים</strong> שבהם כל אחד מוזמן להצטרף, ועוד הפתעות שמגיעות.</p>
+        <p>מה שמייחד אותנו? אנחנו לא רק גיימרים — אנחנו גיימרים שבונים את הכלים שלהם.</p>
+      </div>
+      <div class="gaming-features">
+        <div class="gaming-feat">
+          <div class="gaming-feat-icon">🏆</div>
+          <div class="gaming-feat-text">
+            <strong>טורנירים קהילתיים</strong>
+            <span>תחרויות בין חברי הדיסקורד עם פרסים</span>
+          </div>
+        </div>
+        <div class="gaming-feat">
+          <div class="gaming-feat-icon">🎮</div>
+          <div class="gaming-feat-text">
+            <strong>סשנים משותפים</strong>
+            <span>כל אחד מוזמן — פשוט קפוץ לVoice Channel</span>
+          </div>
+        </div>
+        <div class="gaming-feat">
+          <div class="gaming-feat-icon">💬</div>
+          <div class="gaming-feat-text">
+            <strong>ערוצי גיימינג ייעודיים</strong>
+            <span>לכל משחק יש ערוץ משלו בדיסקורד</span>
+          </div>
+        </div>
+        <div class="gaming-feat">
+          <div class="gaming-feat-icon">🔔</div>
+          <div class="gaming-feat-text">
+            <strong>הודעות על אירועים</strong>
+            <span>תמיד תדעו מה קורה ומתי</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POLL -->
+    <div class="poll-wrap">
+      <p class="poll-title">[ COMMUNITY POLL ]</p>
+      <p class="poll-sub">באיזה משחק הייתם רוצים שנפתח פינה בקהילה? הצביעו!</p>
+      <div class="poll-options" id="pollOptions">
+        <button class="poll-option" onclick="vote('fivem')">
+          <div class="poll-option-left">
+            <span class="poll-option-icon">🚗</span>
+            <div>
+              <div>FiveM</div>
+              <div class="poll-bar-wrap" id="bar-fivem"><div class="poll-bar" id="fill-fivem"></div></div>
+            </div>
+          </div>
+          <span class="poll-pct" id="pct-fivem">0%</span>
+        </button>
+        <button class="poll-option" onclick="vote('fortnite')">
+          <div class="poll-option-left">
+            <span class="poll-option-icon">⚡</span>
+            <div>
+              <div>Fortnite</div>
+              <div class="poll-bar-wrap" id="bar-fortnite"><div class="poll-bar" id="fill-fortnite"></div></div>
+            </div>
+          </div>
+          <span class="poll-pct" id="pct-fortnite">0%</span>
+        </button>
+        <button class="poll-option" onclick="vote('valorant')">
+          <div class="poll-option-left">
+            <span class="poll-option-icon">🎯</span>
+            <div>
+              <div>Valorant</div>
+              <div class="poll-bar-wrap" id="bar-valorant"><div class="poll-bar" id="fill-valorant"></div></div>
+            </div>
+          </div>
+          <span class="poll-pct" id="pct-valorant">0%</span>
+        </button>
+        <button class="poll-option" onclick="vote('cs2')">
+          <div class="poll-option-left">
+            <span class="poll-option-icon">💣</span>
+            <div>
+              <div>CS2</div>
+              <div class="poll-bar-wrap" id="bar-cs2"><div class="poll-bar" id="fill-cs2"></div></div>
+            </div>
+          </div>
+          <span class="poll-pct" id="pct-cs2">0%</span>
+        </button>
+      </div>
+      <div class="poll-discord-note">
+        רוצה להציע משחק אחר? <a href="https://discord.gg/Wkvy62yR" target="_blank">כתוב לנו בדיסקורד ↗</a>
+      </div>
+      <div class="poll-total" id="pollTotal"></div>
     </div>
   </div>
 </section>
@@ -1214,6 +1455,42 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.15 });
 reveals.forEach(r => observer.observe(r));
+
+/* ─── POLL ─── */
+const GAMES = ['fivem','fortnite','valorant','cs2'];
+function loadPoll() {
+  const votes = JSON.parse(localStorage.getItem('scriptix_poll') || '{}');
+  const myVote = localStorage.getItem('scriptix_my_vote');
+  if (myVote) renderPollResults(votes, myVote);
+  else updatePollTotal(votes);
+}
+function vote(game) {
+  if (localStorage.getItem('scriptix_my_vote')) { showToast('כבר הצבעת!'); return; }
+  const votes = JSON.parse(localStorage.getItem('scriptix_poll') || '{}');
+  votes[game] = (votes[game] || 0) + 1;
+  localStorage.setItem('scriptix_poll', JSON.stringify(votes));
+  localStorage.setItem('scriptix_my_vote', game);
+  renderPollResults(votes, game);
+  showToast('✓ הצבעה נרשמה!');
+}
+function renderPollResults(votes, myVote) {
+  const total = GAMES.reduce((s,g) => s + (votes[g]||0), 0);
+  GAMES.forEach(g => {
+    const pct = total ? Math.round((votes[g]||0)/total*100) : 0;
+    document.getElementById('pct-'+g).style.display = 'block';
+    document.getElementById('pct-'+g).textContent = pct+'%';
+    document.getElementById('bar-'+g).style.display = 'block';
+    setTimeout(() => { document.getElementById('fill-'+g).style.width = pct+'%'; }, 100);
+    const btn = document.querySelector(`[onclick="vote('${g}')"]`);
+    if (btn) { btn.disabled = true; btn.style.cursor = 'default'; if(g===myVote) btn.classList.add('voted'); }
+  });
+  updatePollTotal(votes);
+}
+function updatePollTotal(votes) {
+  const total = GAMES.reduce((s,g) => s + (votes[g]||0), 0);
+  document.getElementById('pollTotal').textContent = total ? `${total} הצבעות סה"כ` : '';
+}
+loadPoll();
 
 /* ─── INIT ─── */
 loadContent();
