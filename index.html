@@ -484,12 +484,12 @@ section {
 .video-thumb {
   width: 100%;
   aspect-ratio: 16/9;
+  padding-bottom: 0;
   background: var(--bg2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   position: relative;
   overflow: hidden;
+  min-height: 180px;
 }
 .video-thumb iframe {
   width: 100%;
@@ -1567,7 +1567,7 @@ function makeVideoCard(item) {
   d.className = 'video-card';
   d.innerHTML = `
     <div class="video-thumb">
-      ${vid ? `<iframe src="https://www.youtube.com/embed/${vid}" allowfullscreen loading="lazy"></iframe>` : `<span style="color:var(--muted);font-size:0.8rem;">לא ניתן לטעון</span>`}
+      ${vid ? `<iframe src="https://www.youtube.com/embed/${vid}" width="100%" height="100%" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" frameborder="0" style="position:absolute;inset:0;width:100%;height:100%;border:none;"></iframe>` : `<span style="color:var(--muted);font-size:0.8rem;">לא ניתן לטעון</span>`}
     </div>
     <div class="video-info">
       <div class="video-title">${escHtml(item.title)}</div>
