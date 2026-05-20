@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>אומנות גבות | Lisa Alon Eyebrows</title>
-    <meta name="description" content="עיצוב גבות מקצועי, טבעי ומדויק ברמה הגבוהה ביותר על ידי ליסה אלון. שיקום גבות, למינציה וסידור מקצועי בהתאמה אישית.">
-    <meta name="keywords" content="גבות, עיצוב גבות, אומנות גבות, למינציית גבות, שיקום גבות, ליסה אלון גבות">
+    <title>Lisa Alon Eyebrows | אומנות ועיצוב גבות</title>
+    <meta name="description" content="עיצוב גבות מקצועי ומדויק בגובה העיניים. קליניקה חדשה ומשופצת ברחוב הארזים בקרוב! בואי ליהנות ממראה טבעי ומחמיא שמתאים בדיוק לך.">
+    <meta name="keywords" content="גבות, עיצוב גבות, ליסה אלון, רחוב הארזים, למינציית גבות, שיקום גבות">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Premium Boutique Hotel Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Secular+One&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            --primary: #4A3B32;       /* חום יוקרתי כהה */
-            --secondary: #A88957;     /* זהב עדין / ברונזה */
-            --accent: #C5A059;        /* זהב בהיר */
-            --bg-light: #FDFBF7;      /* קרם / בז' בהיר מאוד */
-            --bg-accent: #F4EFEA;     /* בז' חם עדין */
-            --text-dark: #2D2520;     /* טקסט כהה */
-            --text-muted: #6E6259;    /* טקסט משני */
-            --white: #ffffff;
-            --shadow: 0 10px 30px rgba(74, 59, 50, 0.08);
-            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --hotel-cream: #F5F1E9;     /* רקע מלון בוטיק חם ויוקרתי */
+            --hotel-dark: #3A322D;      /* חום שוקולד/אספרסו עמוק ומכובד */
+            --hotel-gold: #C6A47E;      /* זהב מט עדין ויוקרתי */
+            --hotel-gold-light: #E8DFD3;/* זהב בהיר מוחלק */
+            --hotel-white: #FFFFFF;
+            --text-main: #4A403A;       /* טקסט ראשי רך ומזמין */
+            --text-muted: #7A6F66;      /* טקסט משני יומיומי */
+            --shadow-subtle: 0 8px 30px rgba(58, 50, 45, 0.04);
+            --transition-smooth: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         * {
@@ -41,163 +40,87 @@
 
         body {
             font-family: 'Assistant', sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.7;
+            background-color: var(--hotel-cream);
+            color: var(--text-main);
+            line-height: 1.65;
             overflow-x: hidden;
         }
 
         h1, h2, h3, h4 {
             font-family: 'Tinos', serif;
-            font-weight: 700;
-            color: var(--primary);
+            color: var(--hotel-dark);
+            font-weight: 400;
         }
 
         a {
-            text-style: none;
             text-decoration: none;
             color: inherit;
-            transition: var(--transition);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+            transition: var(--transition-smooth);
         }
 
         .container {
-            width: 90%;
-            max-width: 1200px;
+            width: 88%;
+            max-width: 1140px;
             margin: 0 auto;
         }
 
-        /* Unique Luxury Section Titles */
-        .section-header {
+        /* Top Announcement Bar - New Clinic */
+        .announcement-bar {
+            background-color: var(--hotel-dark);
+            color: var(--hotel-gold-light);
             text-align: center;
-            margin-bottom: 50px;
-            position: relative;
-        }
-        
-        .section-header h2 {
-            font-size: 2.5rem;
-            letter-spacing: -1px;
-            margin-bottom: 10px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-header h2::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 2px;
-            background-color: var(--secondary);
-        }
-
-        .section-header p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            max-width: 60px;
-            margin: 15px auto 0 auto;
-            font-weight: 300;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 14px 34px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
+            padding: 10px 15px;
+            font-size: 0.95rem;
+            font-weight: 500;
             letter-spacing: 0.5px;
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
             position: relative;
-            overflow: hidden;
-            z-index: 1;
+            z-index: 1001;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .btn-primary {
-            background-color: var(--primary);
-            color: var(--white);
-            box-shadow: 0 5px 15px rgba(74, 59, 50, 0.2);
+        .announcement-bar i {
+            margin-left: 8px;
+            color: var(--hotel-gold);
         }
 
-        .btn-primary:hover {
-            background-color: var(--secondary);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(168, 137, 87, 0.3);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--primary);
-            color: var(--white);
-            transform: translateY(-3px);
-        }
-
-        /* Sticky Header */
+        /* Elegant Sticky Header */
         header {
-            position: fixed;
+            position: sticky;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
-            background-color: rgba(253, 251, 247, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.02);
-            transition: var(--transition);
-        }
-
-        header.scrolled {
-            padding: 10px 0;
-            background-color: var(--white);
-            box-shadow: 0 5px 25px rgba(74, 59, 50, 0.05);
+            background-color: rgba(245, 241, 233, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(198, 164, 126, 0.15);
+            transition: var(--transition-smooth);
         }
 
         .nav-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
-            transition: var(--transition);
+            padding: 12px 0;
         }
 
         .logo-box img {
-            height: 45px;
+            height: 50px;
             width: auto;
             object-fit: contain;
-            transition: var(--transition);
-        }
-
-        header.scrolled .logo-box img {
-            height: 38px;
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 35px;
         }
 
         .nav-item a {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: var(--primary);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--hotel-dark);
             position: relative;
-            padding: 5px 0;
+            padding: 6px 0;
         }
 
         .nav-item a::after {
@@ -206,9 +129,9 @@
             bottom: 0;
             right: 0;
             width: 0;
-            height: 2px;
-            background-color: var(--secondary);
-            transition: var(--transition);
+            height: 1px;
+            background-color: var(--hotel-gold);
+            transition: var(--transition-smooth);
         }
 
         .nav-item a:hover::after,
@@ -217,706 +140,554 @@
             left: 0;
         }
 
-        .nav-cta {
-            display: block;
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            border-radius: 4px; /* ריבוע מעודן של מלונות בוטיק */
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border: none;
+        }
+
+        .btn-hotel {
+            background-color: var(--hotel-dark);
+            color: var(--hotel-cream);
+            border: 1px solid var(--hotel-dark);
+        }
+
+        .btn-hotel:hover {
+            background-color: transparent;
+            color: var(--hotel-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--hotel-gold);
+            color: var(--hotel-dark);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--hotel-gold);
+            color: var(--hotel-white);
+            transform: translateY(-2px);
         }
 
         .nav-toggle {
             display: none;
-            font-size: 1.5rem;
-            color: var(--primary);
+            font-size: 1.4rem;
+            color: var(--hotel-dark);
             cursor: pointer;
         }
 
         /* Hero Section */
         #home {
-            height: 100vh;
-            min-height: 650px;
-            background: linear-gradient(rgba(45, 37, 32, 0.55), rgba(74, 59, 50, 0.45)), url('image_e80b84.jpg') center center/cover no-repeat;
+            height: 75vh;
+            min-height: 520px;
+            background: linear-gradient(rgba(245, 241, 233, 0.45), rgba(58, 50, 45, 0.5)), url('image_e80b84.jpg') center center/cover no-repeat;
             display: flex;
             align-items: center;
-            text-align: center;
-            color: var(--white);
-            padding-top: 80px;
             position: relative;
         }
 
-        .hero-content {
-            max-width: 800px;
+        .hero-box {
+            background-color: rgba(255, 255, 255, 0.94);
+            padding: 50px 60px;
+            max-width: 580px;
+            border-radius: 2px;
+            box-shadow: 0 20px 50px rgba(58, 50, 45, 0.08);
+            border-right: 3px solid var(--hotel-gold);
+            animation: fadeInRight 1s ease;
+        }
+
+        .hero-box h1 {
+            font-size: 2.4rem;
+            line-height: 1.25;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero-box p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        /* Clinic Announcement Highlight Section */
+        .clinic-reveal {
+            background-color: var(--hotel-white);
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(198, 164, 126, 0.12);
+            text-align: center;
+        }
+
+        .reveal-card {
+            max-width: 750px;
             margin: 0 auto;
-            animation: fadeInUp 1.2s ease;
+            border: 1px dashed var(--hotel-gold);
+            padding: 35px;
+            background-color: rgba(245, 241, 233, 0.3);
+            border-radius: 4px;
         }
 
-        .hero-content h1 {
-            font-size: 3.8rem;
-            color: var(--white);
-            margin-bottom: 20px;
-            text-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            line-height: 1.2;
+        .reveal-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--hotel-dark);
         }
 
-        .hero-content p {
-            font-size: 1.4rem;
-            font-weight: 300;
-            margin-bottom: 35px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            letter-spacing: 0.5px;
-        }
-
-        .hero-content .btn {
+        .reveal-card p {
             font-size: 1.1rem;
-            padding: 16px 45px;
-            background-color: var(--accent);
-            box-shadow: 0 10px 25px rgba(197, 160, 89, 0.4);
-        }
-
-        .hero-content .btn:hover {
-            background-color: var(--white);
-            color: var(--primary);
-            box-shadow: 0 10px 30px rgba(255,255,255,0.4);
+            color: var(--text-main);
+            margin-bottom: 0;
         }
 
         /* About Section */
         #about {
-            padding: 100px 0;
-            background-color: var(--white);
+            padding: 90px 0;
+            background-color: var(--hotel-cream);
         }
 
-        .about-wrapper {
+        .about-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 50px;
             align-items: center;
         }
 
-        .about-img {
+        .about-image-wrapper {
             position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
+            padding: 12px;
+            background-color: var(--hotel-white);
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(198, 164, 126, 0.15);
         }
 
-        .about-img img {
+        .about-image-wrapper img {
             width: 100%;
-            height: 500px;
+            height: 440px;
             object-fit: cover;
-            transition: var(--transition);
+            display: block;
         }
 
-        .about-img:hover img {
-            transform: scale(1.03);
-        }
-
-        .about-text h3 {
-            font-size: 2rem;
+        .about-text h2 {
+            font-size: 2.2rem;
             margin-bottom: 20px;
-            font-weight: 600;
+            position: relative;
         }
 
         .about-text p {
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
             text-align: justify;
-        }
-
-        .about-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 35px;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .feature-item i {
-            color: var(--secondary);
-            font-size: 1.3rem;
-        }
-
-        .feature-item span {
-            font-weight: 600;
-            color: var(--primary);
         }
 
         /* Services Section */
         #services {
-            padding: 100px 0;
-            background-color: var(--bg-accent);
+            padding: 90px 0;
+            background-color: var(--hotel-white);
         }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background-color: var(--white);
-            padding: 40px 30px;
-            border-radius: 16px;
+        .section-title {
             text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(168, 137, 87, 0.05);
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .services-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .service-hotel-card {
+            background-color: var(--hotel-cream);
+            padding: 35px 25px;
+            border-radius: 2px;
+            transition: var(--transition-smooth);
+            border-top: 2px solid transparent;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(74, 59, 50, 0.12);
-            border-color: var(--secondary);
+        .service-hotel-card:hover {
+            background-color: var(--hotel-white);
+            box-shadow: 0 15px 40px rgba(58, 50, 45, 0.05);
+            border-top-color: var(--hotel-gold);
+            transform: translateY(-5px);
         }
 
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background-color: var(--bg-light);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px auto;
-            color: var(--secondary);
-            font-size: 1.8rem;
-            transition: var(--transition);
+        .service-hotel-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
-        .service-card:hover .service-icon {
-            background-color: var(--primary);
-            color: var(--white);
-        }
-
-        .service-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-        }
-
-        .service-card p {
-            color: var(--text-muted);
+        .service-hotel-card p {
             font-size: 0.98rem;
-            margin-bottom: 25px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
             flex-grow: 1;
         }
 
-        .service-price {
-            font-size: 1.25rem;
+        .service-hotel-price {
+            font-size: 1.15rem;
             font-weight: 700;
-            color: var(--primary);
-            border-top: 1px solid var(--bg-accent);
-            padding-top: 15px;
+            color: var(--hotel-dark);
+            letter-spacing: -0.5px;
         }
 
         /* Gallery Section */
         #gallery {
-            padding: 100px 0;
-            background-color: var(--white);
+            padding: 90px 0;
+            background-color: var(--hotel-cream);
         }
 
-        .gallery-grid {
+        .gallery-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
         }
 
-        .gallery-item {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-            aspect-ratio: 4 / 5;
+        .gallery-box {
+            background-color: var(--hotel-white);
+            padding: 10px;
+            border: 1px solid rgba(198, 164, 126, 0.12);
             cursor: pointer;
+            transition: var(--transition-smooth);
         }
 
-        .gallery-item img {
+        .gallery-box img {
             width: 100%;
-            height: 100%;
+            height: 320px;
             object-fit: cover;
-            transition: var(--transition);
+            transition: var(--transition-smooth);
         }
 
-        .gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to top, rgba(74, 59, 50, 0.85), rgba(74, 59, 50, 0.2));
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 25px;
-            opacity: 0;
-            transition: var(--transition);
+        .gallery-box:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-subtle);
         }
 
-        .gallery-item:hover img {
-            transform: scale(1.08);
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-
-        .gallery-overlay span {
-            color: var(--accent);
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-            transform: translateY(10px);
-            transition: var(--transition);
-        }
-
-        .gallery-overlay h4 {
-            color: var(--white);
-            font-size: 1.2rem;
-            transform: translateY(15px);
-            transition: var(--transition);
-        }
-
-        .gallery-item:hover .gallery-overlay span,
-        .gallery-item:hover .gallery-overlay h4 {
-            transform: translateY(0);
-        }
-
-        /* Call To Action (CTA) Repeat Section */
-        .cta-banner {
-            background: linear-gradient(rgba(4A, 59, 50, 0.9), rgba(4A, 59, 50, 0.9)), url('image_e80b67.jpg') center center/cover fixed no-repeat;
-            padding: 80px 0;
+        .gallery-caption {
+            margin-top: 10px;
             text-align: center;
-            color: var(--white);
+            font-size: 0.95rem;
+            color: var(--hotel-dark);
+            font-weight: 500;
         }
 
-        .cta-banner h2 {
-            color: var(--white);
-            font-size: 2.3rem;
-            margin-bottom: 20px;
+        /* Continuous CTA Strip */
+        .mid-cta {
+            background-color: var(--hotel-dark);
+            color: var(--hotel-cream);
+            padding: 50px 0;
+            text-align: center;
         }
 
-        .cta-banner p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            font-weight: 300;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        .mid-cta h3 {
+            color: var(--hotel-white);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
         }
 
-        .cta-banner .btn {
-            background-color: var(--white);
-            color: var(--primary);
+        .mid-cta p {
+            margin-bottom: 25px;
+            opacity: 0.9;
+            font-size: 1.05rem;
         }
 
-        .cta-banner .btn:hover {
-            background-color: var(--accent);
-            color: var(--white);
-            box-shadow: 0 10px 25px rgba(197, 160, 89, 0.4);
+        .mid-cta .btn {
+            background-color: var(--hotel-gold);
+            color: var(--hotel-dark);
+        }
+
+        .mid-cta .btn:hover {
+            background-color: var(--hotel-white);
+            color: var(--hotel-dark);
         }
 
         /* Reviews Section */
         #reviews {
-            padding: 100px 0;
-            background-color: var(--bg-accent);
+            padding: 90px 0;
+            background-color: var(--hotel-white);
         }
 
-        .reviews-container {
+        .reviews-layout {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
         }
 
-        .review-card {
-            background-color: var(--white);
-            padding: 35px;
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            position: relative;
+        .review-hotel-box {
+            border: 1px solid rgba(198, 164, 126, 0.15);
+            padding: 30px;
+            border-radius: 2px;
+            background-color: rgba(245, 241, 233, 0.15);
         }
 
-        .review-card::before {
-            content: '”';
-            position: absolute;
-            top: 15px;
-            left: 35px;
-            font-size: 5rem;
-            color: rgba(168, 137, 87, 0.15);
-            font-family: serif;
-            line-height: 1;
+        .review-hotel-box .stars {
+            color: var(--hotel-gold);
+            margin-bottom: 12px;
+            font-size: 0.85rem;
         }
 
-        .stars {
-            color: var(--accent);
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-        }
-
-        .review-text {
-            color: var(--text-muted);
+        .review-hotel-box p {
             font-style: italic;
-            margin-bottom: 20px;
-            font-size: 1rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+            margin-bottom: 15px;
         }
 
-        .client-info h4 {
-            font-size: 1.1rem;
+        .review-hotel-box span {
             font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--hotel-dark);
         }
 
         /* Contact Section */
         #contact {
-            padding: 100px 0;
-            background-color: var(--white);
+            padding: 90px 0;
+            background-color: var(--hotel-cream);
         }
 
-        .contact-grid {
+        .contact-layout {
             display: grid;
             grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
+            gap: 50px;
         }
 
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .contact-info h3 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            color: var(--text-muted);
-            margin-bottom: 35px;
-            font-size: 1.1rem;
-        }
-
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            margin-bottom: 35px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: var(--bg-accent);
-            color: var(--secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            transition: var(--transition);
-        }
-
-        .contact-item:hover .contact-icon {
-            background-color: var(--primary);
-            color: var(--white);
-        }
-
-        .contact-text h4 {
-            font-size: 1rem;
-            color: var(--text-muted);
-            font-weight: 400;
-            margin-bottom: 2px;
-        }
-
-        .contact-text p {
-            font-size: 1.15rem;
+        .info-side h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
             font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 0;
         }
 
-        .social-links {
+        .info-side p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .item-row {
             display: flex;
+            align-items: center;
             gap: 15px;
-        }
-
-        .social-icon {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            border: 1px solid var(--bg-accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
-            font-size: 1.1rem;
-            transition: var(--transition);
-        }
-
-        .social-icon:hover {
-            background-color: var(--primary);
-            color: var(--white);
-            transform: translateY(-3px);
-        }
-
-        /* Contact Form */
-        .contact-form-box {
-            background-color: var(--bg-light);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(168, 137, 87, 0.05);
-        }
-
-        .form-group {
             margin-bottom: 20px;
         }
 
-        .form-group label {
+        .item-row i {
+            font-size: 1.1rem;
+            color: var(--hotel-gold);
+            width: 25px;
+        }
+
+        .item-row span {
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .form-side {
+            background-color: var(--hotel-white);
+            padding: 40px;
+            border-radius: 2px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(198, 164, 126, 0.15);
+        }
+
+        .form-row {
+            margin-bottom: 20px;
+        }
+
+        .form-row label {
             display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
+            margin-bottom: 6px;
             font-size: 0.95rem;
-            color: var(--primary);
+            font-weight: 500;
+            color: var(--hotel-dark);
         }
 
-        .form-control {
+        .form-input {
             width: 100%;
-            padding: 14px 20px;
-            border-radius: 10px;
-            border: 1px solid rgba(74, 59, 50, 0.1);
-            background-color: var(--white);
+            padding: 12px 15px;
+            border: 1px solid rgba(58, 50, 45, 0.15);
+            background-color: var(--hotel-cream);
             font-family: inherit;
-            font-size: 1rem;
-            transition: var(--transition);
-            color: var(--text-dark);
+            font-size: 0.98rem;
+            color: var(--hotel-dark);
+            border-radius: 2px;
+            transition: var(--transition-smooth);
         }
 
-        .form-control:focus {
+        .form-input:focus {
             outline: none;
-            border-color: var(--secondary);
-            box-shadow: 0 0 0 4px rgba(168, 137, 87, 0.1);
+            border-color: var(--hotel-gold);
+            background-color: var(--hotel-white);
         }
 
-        textarea.form-control {
+        textarea.form-input {
+            height: 100px;
             resize: none;
-            height: 120px;
         }
 
-        .contact-form-box .btn {
+        .form-side .btn {
             width: 100%;
-            padding: 15px;
+            padding: 14px;
         }
 
         /* Footer */
         footer {
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 40px 0;
+            background-color: var(--hotel-dark);
+            color: var(--hotel-cream);
+            padding: 30px 0;
             text-align: center;
-            border-top: 4px solid var(--secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--hotel-gold);
         }
 
-        footer p {
-            font-size: 0.95rem;
-            opacity: 0.8;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
+        /* Floating WhatsApp Icon */
+        .whatsapp-fixed {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            width: 55px;
+            height: 55px;
             background-color: #25D366;
-            color: var(--white);
+            color: var(--hotel-white);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            z-index: 999;
-            transition: var(--transition);
-            animation: pulse 2s infinite;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 1999;
+            transition: var(--transition-smooth);
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1) rotate(10deg);
-            background-color: #20ba5a;
+        .whatsapp-fixed:hover {
+            transform: scale(1.1);
         }
 
-        /* Lightbox Modal */
-        .lightbox {
+        /* Lightbox modal */
+        .hotel-lightbox {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(45, 37, 32, 0.95);
-            z-index: 2000;
+            background-color: rgba(39, 34, 30, 0.96);
+            z-index: 3000;
             display: none;
             align-items: center;
             justify-content: center;
-            opacity: 0;
-            transition: opacity 0.4s ease;
         }
 
-        .lightbox.active {
+        .hotel-lightbox.show {
             display: flex;
-            opacity: 1;
         }
 
-        .lightbox-content {
+        .hotel-lightbox img {
             max-width: 85%;
-            max-height: 85vh;
-            position: relative;
+            max-height: 80vh;
+            border: 3px solid var(--hotel-white);
         }
 
-        .lightbox-content img {
-            max-width: 100%;
-            max-height: 85vh;
-            border-radius: 8px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-        }
-
-        .lightbox-close {
+        .lightbox-x {
             position: absolute;
-            top: -45px;
-            left: 0;
-            color: var(--white);
+            top: 25px;
+            left: 25px;
+            color: var(--hotel-white);
             font-size: 2rem;
             cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .lightbox-close:hover {
-            color: var(--accent);
         }
 
         /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
         }
 
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .hero-content h1 {
-                font-size: 2.8rem;
-            }
-            .about-wrapper {
+        /* Tablet & Mobile tweaks */
+        @media (max-width: 912px) {
+            .about-grid, .contact-layout {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 35px;
             }
-            .about-img img {
-                height: 400px;
+            #home {
+                height: auto;
+                padding: 100px 0;
             }
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
+            .hero-box {
+                margin: 0 auto;
+                padding: 35px;
             }
         }
 
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
-                top: 75px;
+                top: 110px; /* text height + bars */
                 right: -100%;
                 width: 100%;
-                height: calc(100vh - 75px);
-                background-color: var(--white);
+                height: calc(100vh - 110px);
+                background-color: var(--hotel-cream);
                 flex-direction: column;
                 align-items: center;
                 padding: 40px 0;
-                transition: var(--transition);
-                box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+                gap: 25px;
+                border-top: 1px solid rgba(198, 164, 126, 0.15);
             }
-
-            .nav-menu.active {
+            .nav-menu.open {
                 right: 0;
             }
-
             .nav-toggle {
                 display: block;
-            }
-
-            .nav-cta {
-                display: none;
-            }
-
-            .section-header h2 {
-                font-size: 2rem;
-            }
-
-            .hero-content h1 {
-                font-size: 2.3rem;
-            }
-
-            .hero-content p {
-                font-size: 1.15rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/972505808847?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%9C%D7%99%D7%A1%D7%94%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%F0%9F%98%8A" class="whatsapp-float" target="_blank" aria-label="פנייה בוואטסאפ">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Top Sticky Bar announcing the new clinic -->
+    <div class="announcement-bar">
+        <i class="fas fa-sparkles"></i>
+        חדשות מרגשות! בקרוב נפתחת הקליניקה החדשה והמשופצת שלנו ברחוב הארזים – מחכה לראותכן!
+    </div>
 
-    <!-- Header / Navbar -->
+    <!-- Header / Nav -->
     <header>
         <div class="container nav-container">
             <div class="logo-box">
-                <!-- משתמש בלוגו שסופק, אם הקובץ לא זמין מציג טקסט מעוצב אלגנטי -->
-                <img src="image_e80b6a.png" alt="Lisa Alon Eyebrows Logo" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';">
-                <h2 id="text-logo" style="display:none; font-family:'Tinos', serif; font-size:1.5rem; color:var(--primary); letter-spacing:1px;">LISA ALON</h2>
+                <!-- Fallback to text logo if images aren't locally found yet -->
+                <img src="image_e80b6a.png" alt="Lisa Alon" onerror="this.style.display='none'; document.getElementById('textLogo').style.display='block';">
+                <h2 id="textLogo" style="display:none; font-family:'Tinos', serif; font-weight:700; font-size:1.4rem; letter-spacing:1px;">LISA ALON</h2>
             </div>
-            
+
             <nav>
                 <ul class="nav-menu">
-                    <li class="nav-item active"><a href="#home">דף הבית</a></li>
-                    <li class="nav-item"><a href="#about">אודות</a></li>
-                    <li class="nav-item"><a href="#services">שירותים</a></li>
-                    <li class="nav-item"><a href="#gallery">גלריית עבודות</a></li>
-                    <li class="nav-item"><a href="#reviews">המלצות</a></li>
-                    <li class="nav-item"><a href="#contact">יצירת קשר</a></li>
+                    <li class="nav-item active"><a href="#home">בית</a></li>
+                    <li class="nav-item"><a href="#about">מי אני</a></li>
+                    <li class="nav-item"><a href="#services">טיפולים</a></li>
+                    <li class="nav-item"><a href="#gallery">עבודות מהקליניקה</a></li>
+                    <li class="nav-item"><a href="#reviews">לקוחות כותבות</a></li>
+                    <li class="nav-item"><a href="#contact">דברי איתי</a></li>
                 </ul>
             </nav>
-
-            <div class="nav-cta">
-                <a href="https://wa.me/972505808847?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%9C%D7%99%D7%A1%D7%94%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%F0%9F%98%8A" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.95rem;" target="_blank">לקביעת תור</a>
-            </div>
 
             <div class="nav-toggle">
                 <i class="fas fa-bars"></i>
@@ -927,10 +698,20 @@
     <!-- Hero Section -->
     <section id="home">
         <div class="container">
-            <div class="hero-content">
-                <h1>אומנות גבות ברמה הגבוהה ביותר</h1>
-                <p>דיוק, יופי וטבעיות – בהתאמה אישית לכל לקוחה</p>
-                <a href="https://wa.me/972505808847?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%9C%D7%99%D7%A1%D7%94%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%F0%9F%98%8A" class="btn btn-primary" target="_blank">לקביעת תור מהירה</a>
+            <div class="hero-box">
+                <h1>הגבות שלך, רק בגרסה הכי טובה שלהן</h1>
+                <p>היי, הגעת למקום הנכון. אצלי בסטודיו תמצאי עיצוב גבות מדויק, נקי ובגובה העיניים – שמתאים בול לתווי הפנים הייחודיים שלך.</p>
+                <a href="https://wa.me/972505808847?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%F0%9F%98%8A" target="_blank" class="btn btn-hotel">לקביעת תור בוואטסאפ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Clinic Reveal Section -->
+    <section class="clinic-reveal">
+        <div class="container">
+            <div class="reveal-card">
+                <h3>מתחדשים בשבילך ✨</h3>
+                <p>העבודות בעיצומן! ממש בקרוב אני מזמינה אותך לחוויית טיפול מפנקת ואקסקלוסיבית בקליניקה החדשה והמשופצת שלי ברחוב הארזים. יש למה לחכות!</p>
             </div>
         </div>
     </section>
@@ -938,33 +719,15 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <div class="about-wrapper">
-                <div class="about-img">
-                    <img src="image_e80b67.jpg" alt="עבודת גבות מקצועית ליסה אלון">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="image_e80b67.jpg" alt="ליסה אלון אומנות גבות" onerror="this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80'">
                 </div>
                 <div class="about-text">
-                    <h3>נעים להכיר, אני ליסה אלון</h3>
-                    <p>מתוך תשוקה אמיתית לאסתטיקה וליופי הנשי, הקמתי את הסטודיו במטרה להעניק לכל אישה את מסגרת הפנים המושלמת עבורה. אני מאמינה שגבות הן לא טרנד חולף, אלא אומנות של דיוק ופרופורציות שנועדו להדגיש את המבנה הטבעי שלך.</p>
-                    <p>אני מתמחה בטכניקות המתקדמות ביותר בשוק, תוך הקפדה על היגיינה מקסימלית, חומרים איכותיים מובילים והתאמה אישית מלאה לפי צפיפות השיער, סוג העור ורצון הלקוחה.</p>
-                    
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-gem"></i>
-                            <span>חומרי פרימיום</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-magic"></i>
-                            <span>מראה טבעי ומדויק</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-heart"></i>
-                            <span>יחס אישי וחם</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-certificate"></i>
-                            <span>הסמכות מקצועיות</span>
-                        </div>
-                    </div>
+                    <h2>היי, אני ליסה אלון</h2>
+                    <p>תמיד הייתה לי אהבה מטורפת לעולם האסתטיקה והטיפוח, ובעיקר למה שגבות נכונות יכולות לעשות למבט ולביטחון העצמי שלנו. אני מאמינה שגבות הן לא טרנד חולף ולא פס ייצור – לכל אחת מגיע העיצוב הנכון לה, שידגיש את היופי הקיים בצורה הכי טבעית ומחמיאה שיש.</p>
+                    <p>אני מקפידה להשתמש בחומרים הכי טובים ובטכניקות עדינות ומדויקות, כדי שתצאי מפה עם חיוך והרגשה שקיבלת את הטוב ביותר. בקרוב ניפגש בחלל החדש והמהמם ברחוב הארזים, ואני כבר לא יכולה לחכות לארח אותך!</p>
+                    <a href="#services" class="btn btn-outline" style="margin-top: 10px;">לרשימת הטיפולים שלי</a>
                 </div>
             </div>
         </div>
@@ -973,47 +736,43 @@
     <!-- Services Section -->
     <section id="services">
         <div class="container">
-            <div class="section-header">
-                <h2>השירותים בסטודיו</h2>
-                <p>מגוון טיפולי גבות מקצועיים המותאמים אישית לתווי הפנים שלך</p>
+            <div class="section-title">
+                <h2>הטיפולים בקליניקה</h2>
+                <p>קחי לך שעה של שקט ותיהני מהשירותים המובילים שלי</p>
             </div>
-            
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
+
+            <div class="services-row">
+                <!-- Card 1 -->
+                <div class="service-hotel-card">
                     <div>
-                        <div class="service-icon"><i class="fas fa-eye"></i></div>
                         <h3>עיצוב גבות</h3>
-                        <p>יצירת מסגרת מושלמת ומחמיאה לפנים בהתאם למורפולוגיה ופרופורציות אישיות בדיוק מירבי.</p>
+                        <p>התאמה מלאה למבנה הפנים, ניקוי מדויק ויצירת צורה סימטרית וטבעית שמחמיאה לך בדיוק.</p>
                     </div>
-                    <div class="service-price">₪120</div>
+                    <div class="service-hotel-price">₪120</div>
                 </div>
-                <!-- Service 2 -->
-                <div class="service-card">
+                <!-- Card 2 -->
+                <div class="service-hotel-card">
                     <div>
-                        <div class="service-icon"><i class="fas fa-sparkles"></i></div>
                         <h3>למינציית גבות</h3>
-                        <p>קיבוע והרמת שיערת הגבה למראה מלא, מסודר, נוכח ואופנתי שנשאר לאורך שבועות.</p>
+                        <p>הרמה וסידור של שיערת הגבה למראה מלא, פתוח ואופנתי שמחזיק מעמד לאורך שבועות ארוכים.</p>
                     </div>
-                    <div class="service-price">₪250</div>
+                    <div class="service-hotel-price">₪250</div>
                 </div>
-                <!-- Service 3 -->
-                <div class="service-card">
+                <!-- Card 3 -->
+                <div class="service-hotel-card">
                     <div>
-                        <div class="service-icon"><i class="fas fa-seedling"></i></div>
                         <h3>שיקום גבות</h3>
-                        <p>טיפול ייחודי המיועד לגבות דלילות או פגועות, המעודד צמיחה מחודשת ומחזיר את המראה המלא.</p>
+                        <p>טיפול אישי לגבות דלילות או כאלו שנפגעו מעיצוב לא נכון. נחזיר להן יחד את הנפח והבריאות.</p>
                     </div>
-                    <div class="service-price">₪180</div>
+                    <div class="service-hotel-price">₪180</div>
                 </div>
-                <!-- Service 4 -->
-                <div class="service-card">
+                <!-- Card 4 -->
+                <div class="service-hotel-card">
                     <div>
-                        <div class="service-icon"><i class="fas fa-scissors"></i></div>
-                        <h3>סידור ושעווה עדינה</h3>
-                        <p>ניקוי מהיר ומדויק באמצעות שעווה היפואלרגנית עדינה מותאמת במיוחד לעור הפנים הרגיש.</p>
+                        <h3>סידור ושעווה</h3>
+                        <p>ניקוי מהיר, עדין ונקי במיוחד בעזרת שעווה היפואלרגנית המותאמת לעור פנים רגיש.</p>
                     </div>
-                    <div class="service-price">₪80</div>
+                    <div class="service-hotel-price">₪80</div>
                 </div>
             </div>
         </div>
@@ -1022,105 +781,60 @@
     <!-- Gallery Section -->
     <section id="gallery">
         <div class="container">
-            <div class="section-header">
-                <h2>גלריית עבודות</h2>
-                <p>מבט מקרוב על הדיוק, התוצאות והשינויים המדהימים בסטודיו</p>
+            <div class="section-title">
+                <h2>עבודות מהקליניקה</h2>
+                <p>לחצי על התמונות כדי לראות את הדיוק מקרוב (ניתן להוסיף עבודות נוספות בהמשך)</p>
             </div>
 
-            <div class="gallery-grid">
-                <!-- Item 1 -->
-                <div class="gallery-item" onclick="openLightbox('image_e80b67.jpg')">
-                    <img src="image_e80b67.jpg" alt="עיצוב גבות טבעי">
-                    <div class="gallery-overlay">
-                        <span>עיצוב וסידור</span>
-                        <h4>מראה טבעי ומלא</h4>
-                    </div>
+            <div class="gallery-container">
+                <div class="gallery-box" onclick="viewImage('image_e80b67.jpg')">
+                    <img src="image_e80b67.jpg" alt="עיצוב גבות" onerror="this.src='https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=400&q=80'">
+                    <div class="gallery-caption">מראה טבעי ומלא</div>
                 </div>
-                <!-- Item 2 -->
-                <div class="gallery-item" onclick="openLightbox('image_e80b6d.jpg')">
-                    <img src="image_e80b6d.jpg" alt="למינציית גבות מושלמת">
-                    <div class="gallery-overlay">
-                        <span>למינציה</span>
-                        <h4>הרמה וסידור מודרני</h4>
-                    </div>
+                <div class="gallery-box" onclick="viewImage('image_e80b6d.jpg')">
+                    <img src="image_e80b6d.jpg" alt="למינציית גבות" onerror="this.src='https://images.unsplash.com/photo-1522337241834-d4359c1427c5?auto=format&fit=crop&w=400&q=80'">
+                    <div class="gallery-caption">למינציה והרמה מדויקת</div>
                 </div>
-                <!-- Item 3 -->
-                <div class="gallery-item" onclick="openLightbox('image_e80b84.jpg')">
-                    <img src="image_e80b84.jpg" alt="תהליך עיצוב גבות">
-                    <div class="gallery-overlay">
-                        <span>דיוק באומנות קו</span>
-                        <h4>תהליך העבודה בסטודיו</h4>
-                    </div>
-                </div>
-                <!-- Item 4 (Placeholder space for future images) -->
-                <div class="gallery-item" onclick="openLightbox('image_e80b67.jpg')">
-                    <img src="image_e80b67.jpg" style="filter: grayscale(30%);" alt="שיקום גבות">
-                    <div class="gallery-overlay">
-                        <span>שיקום גבות</span>
-                        <h4>תוצאה מלאה ובריאה</h4>
-                    </div>
+                <div class="gallery-box" onclick="viewImage('image_e80b84.jpg')">
+                    <img src="image_e80b84.jpg" alt="תהליך סידור גבות" onerror="this.src='https://images.unsplash.com/photo-1605497746444-ac9da5848ea7?auto=format&fit=crop&w=400&q=80'">
+                    <div class="gallery-caption">אומנות של דיוק וקו נקי</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
+    <!-- Mid Campaign CTA Banner -->
+    <section class="mid-cta">
         <div class="container">
-            <h2>מוכנה להעניק לגבות שלך את המראה שמגיע להן?</h2>
-            <p>התורים מתמלאים במהירות. שרייני לעצמך תור עכשיו ותיהני מחוויית טיפול יוקרתית ומותאמת אישית.</p>
-            <a href="https://wa.me/972505808847?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%9C%D7%99%D7%A1%D7%94%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%F0%9F%98%8A" class="btn" target="_blank"><i class="fab fa-whatsapp" style="margin-left: 8px;"></i> לקביעת תור בוואטסאפ</a>
+            <h3>רוצה לשמור לעצמך מקום?</h3>
+            <p>התורים לקראת הפתיחה ברחוב הארזים מתחילים להתמלא. דברי איתי ונתאם לך את הזמן הכי נוח.</p>
+            <a href="https://wa.me/972505808847?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%F0%9F%98%8A" target="_blank" class="btn"><i class="fab fa-whatsapp" style="margin-left: 8px;"></i> לחצי כאן למעבר לוואטסאפ</a>
         </div>
     </section>
 
     <!-- Reviews Section -->
     <section id="reviews">
         <div class="container">
-            <div class="section-header">
-                <h2>לקוחות ממליצות</h2>
-                <p>האהבה והפרגון שלכן הם ההצלחה הגדולה ביותר שלי</p>
+            <div class="section-title">
+                <h2>לקוחות מספרות</h2>
+                <p>הפידבקים שלכן שעושים לי את היום</p>
             </div>
 
-            <div class="reviews-container">
-                <!-- Review 1 -->
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"הגעתי לליסה אחרי כמה אכזבות ממעצבות קודמות, והיא פשוט עשתה קסם! הגבות שלי נראות מלאות, טבעיות ומחמיאות בטירוף. יצא מושלם! ממליצה בחום ❤️"</p>
-                    <div class="client-info">
-                        <h4>שני לוי</h4>
-                    </div>
+            <div class="reviews-layout">
+                <div class="review-hotel-box">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"יצא מושלם! ממליצה בחום ❤️ הגעתי אליה אחרי מלא חששות והיא פשוט קלטה את הראש שלי בשנייה."</p>
+                    <span>שני ל.</span>
                 </div>
-                <!-- Review 2 -->
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"הלמינציה אצל ליסה פשוט מחזיקה הכי הרבה זמן מכל מקום אחר שהייתי בו. הדיוק, הניקיון והסטודיו המושלם נותנים הרגשה של חו״ל. אין עלייך בעולם!"</p>
-                    <div class="client-info">
-                        <h4>נועה אברהם</h4>
-                    </div>
+                <div class="review-hotel-box">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"הלמינציה הכי טובה ועמידה שעשו לי אי פעם. ליסה עובדת כל כך נקי ומסודר שזה תענוג."</p>
+                    <span>מיכל ד.</span>
                 </div>
-                <!-- Review 3 -->
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"ליסה היא פשוט מקצוענית ברמות אחרות. היא לא סתם מנקה, היא ממש בונה ומעצבת את הצורה שמתאימה לך לפנים. תודה על השירות והסבלנות!"</p>
-                    <div class="client-info">
-                        <h4>מאיה כהן</h4>
-                    </div>
-                </div>
-                <!-- Review 4 -->
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"סטודיו נקי, יוקרתי ואסתטי ברמות גבוהות. ליסה מקסימה, עדינה ומאוד קשובה למה שביקשתי. התוצאה פשוט מושלמת, קיבלתי מלא מחמאות!"</p>
-                    <div class="client-info">
-                        <h4>מיכל דגן</h4>
-                    </div>
+                <div class="review-hotel-box">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"אלופה ברמות! כבר מחכה להגיע לקליניקה המשופצת בארזים, אין סיכוי שאני מחליפה אותך."</p>
+                    <span>יעל כ.</span>
                 </div>
             </div>
         </div>
@@ -1129,56 +843,40 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>צרי קשר</h3>
-                    <p>זמינה עבורך לכל שאלה, ייעוץ או קביעת תורים. מוזמנת לפנות אליי בערוץ הנוח לך ביותר או להשאיר פרטים בטופס הדינמי.</p>
+            <div class="contact-layout">
+                <div class="info-side">
+                    <h3>בואי נדבר</h3>
+                    <p>אם יש לך שאלות, את רוצה להתייעץ לגבי טיפול מסוים או פשוט לקבוע תור – אני זמינה בשבילך בשמחה.</p>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div class="contact-text">
-                                <h4>חיוג ישיר</h4>
-                                <p><a href="tel:+972505808847">050-5808847</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                            <div class="contact-text">
-                                <h4>וואטסאפ</h4>
-                                <p><a href="https://wa.me/972505808847" target="_blank">שלחי הודעה ישירה</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="contact-text">
-                                <h4>מיקום הסטודיו</h4>
-                                <p>תל אביב והסביבה (אזור המרכז)</p>
-                            </div>
-                        </div>
+                    <div class="item-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>רחוב הארזים, אזור המרכז (קליניקה חדשה בקרוב!)</span>
                     </div>
-
-                    <div class="social-links">
-                        <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/972505808847" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <div class="item-row">
+                        <i class="fas fa-phone-alt"></i>
+                        <span><a href="tel:+972505808847">050-5808847</a></span>
+                    </div>
+                    <div class="item-row">
+                        <i class="fab fa-instagram"></i>
+                        <span><a href="https://instagram.com" target="_blank">עקבי אחריי באינסטגרם</a></span>
                     </div>
                 </div>
 
-                <div class="contact-form-box">
-                    <form id="whatsappForm">
-                        <div class="form-group">
-                            <label for="name">שם מלא *</label>
-                            <input type="text" id="name" class="form-control" placeholder="הקלידי את שמך" required>
+                <div class="form-side">
+                    <form id="dynamicContactForm">
+                        <div class="form-row">
+                            <label for="usr_name">שם מלא *</label>
+                            <input type="text" id="usr_name" class="form-input" placeholder="איך קוראים לך?" required>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">מספר טלפון *</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="הקלידי מספר טלפון" required>
+                        <div class="form-row">
+                            <label for="usr_phone">מספר טלפון *</label>
+                            <input type="tel" id="usr_phone" class="form-input" placeholder="נא להזין מספר נייד" required>
                         </div>
-                        <div class="form-group">
-                            <label for="message">הודעה / שירות מבוקש</label>
-                            <textarea id="message" class="form-control" placeholder="אשמח לקבוע תור לעיצוב/למינציית גבות..."></textarea>
+                        <div class="form-row">
+                            <label for="usr_msg">מה תרצי לתאם / לשאול?</label>
+                            <textarea id="usr_msg" class="form-input" placeholder="היי ליסה, אשמח לקבוע תור לעיצוב גבות..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">שלח לוואטסאפ הסטודיו <i class="fab fa-whatsapp" style="margin-right:8px;"></i></button>
+                        <button type="submit" class="btn btn-hotel">שלח הודעה ישירה לוואטסאפ <i class="fab fa-whatsapp" style="margin-right: 8px;"></i></button>
                     </form>
                 </div>
             </div>
@@ -1188,104 +886,89 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>כל הזכויות שמורות &copy; 2026 LISA ALON EYEBROWS | עיצוב ואומנות הגבות ברמה הגבוהה ביותר</p>
+            <p>&copy; 2026 Lisa Alon Eyebrows | עיצוב ואומנות גבות באווירת בוטיק יוקרתית</p>
         </div>
     </footer>
 
-    <!-- Lightbox Modal Box -->
-    <div class="lightbox" id="lightboxModal" onclick="closeLightboxModal()">
-        <div class="lightbox-content" onclick="event.stopPropagation()">
-            <span class="lightbox-close" onclick="closeLightboxModal()">&times;</span>
-            <img id="lightboxImg" src="" alt="תצוגה מורחבת">
-        </div>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/972505808847?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%F0%9F%98%8A" class="whatsapp-fixed" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lightbox Modal -->
+    <div class="hotel-lightbox" id="imgModal" onclick="closeImage()">
+        <span class="lightbox-x" onclick="closeImage()">&times;</span>
+        <img id="modalTargetImg" src="" alt="תצוגה מורחבת" onclick="event.stopPropagation()">
     </div>
 
-    <!-- JavaScript Code -->
+    <!-- JavaScript Execution -->
     <script>
-        // Sticky Header effect
+        // Sticky and active menu indicators
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            // Active nav item update on scroll
             const sections = document.querySelectorAll('section');
             const navItems = document.querySelectorAll('.nav-item');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= (sectionTop - 150)) {
-                    current = section.getAttribute('id');
+            let currentSec = '';
+
+            sections.forEach(sec => {
+                if (window.scrollY >= (sec.offsetTop - 160)) {
+                    currentSec = sec.getAttribute('id');
                 }
             });
 
             navItems.forEach(item => {
                 item.classList.remove('active');
-                if (item.querySelector('a').getAttribute('href') === `#${current}`) {
+                if (item.querySelector('a').getAttribute('href') === `#${currentSec}`) {
                     item.classList.add('active');
                 }
             });
         });
 
-        // Mobile Menu Toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('.nav-menu');
+        // Toggle Responsive Menu for Mobile
+        const menuBtn = document.querySelector('.nav-toggle');
+        const menuList = document.querySelector('.nav-menu');
 
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            const icon = navToggle.querySelector('i');
-            if (navMenu.classList.contains('active')) {
-                icon.classList.remove('fas', 'fa-bars');
-                icon.classList.add('fas', 'fa-xmark');
+        menuBtn.addEventListener('click', () => {
+            menuList.classList.toggle('open');
+            const icon = menuBtn.querySelector('i');
+            if(menuList.classList.contains('open')) {
+                icon.className = "fas fa-times";
             } else {
-                icon.classList.remove('fas', 'fa-xmark');
-                icon.classList.add('fas', 'fa-bars');
+                icon.className = "fas fa-bars";
             }
         });
 
-        // Close mobile menu when clicking an item
-        document.querySelectorAll('.nav-item a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                const icon = navToggle.querySelector('i');
-                icon.classList.remove('fas', 'fa-xmark');
-                icon.classList.add('fas', 'fa-bars');
+        document.querySelectorAll('.nav-item a').forEach(el => {
+            el.addEventListener('click', () => {
+                menuList.classList.remove('open');
+                menuBtn.querySelector('i').className = "fas fa-bars";
             });
         });
 
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightboxModal');
-        const lightboxImg = document.getElementById('lightboxImg');
+        // Lightbox Handler
+        const modal = document.getElementById('imgModal');
+        const modalImg = document.getElementById('modalTargetImg');
 
-        function openLightbox(imgSrc) {
-            lightboxImg.src = imgSrc;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // block scrolling
+        function viewImage(source) {
+            modalImg.src = source;
+            modal.classList.add('show');
         }
 
-        function closeLightboxModal() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto'; // restore scrolling
+        function closeImage() {
+            modal.classList.remove('show');
         }
 
-        // Dynamic Form to WhatsApp Link Generation
-        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Form to Dynamic WhatsApp Redirection
+        document.getElementById('dynamicContactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
             
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
+            const clientName = document.getElementById('usr_name').value;
+            const clientPhone = document.getElementById('usr_phone').value;
+            const clientMsg = document.getElementById('usr_msg').value;
             
-            const baseText = `שלום ליסה, הגעתי דרך האתר והייתי רוצה לקבוע תור.%0A%0A*פרטי הפנייה:*%0A👤 *שם:* ${encodeURIComponent(name)}%0A📞 *טלפון:* ${encodeURIComponent(phone)}%0A✉️ *הודעה:* ${encodeURIComponent(message || 'מעוניינת בעיצוב גבות ומראה טבעי')}`;
+            const messageEncoded = `שלום ליסה, הגעתי דרך האתר ואני רוצה לקבוע תור 😊%0A%0A*פרטים שהושארו בטופס:*%0Aשם: ${encodeURIComponent(clientName)}%0Aטלפון: ${encodeURIComponent(clientPhone)}%0Aהודעה: ${encodeURIComponent(clientMsg || 'מעוניינת לשמוע פרטים נוספים')}`;
             
-            const whatsappUrl = `https://wa.me/972505808847?text=${baseText}`;
-            
-            window.open(whatsappUrl, '_blank');
+            const finalUrl = `https://wa.me/972505808847?text=${messageEncoded}`;
+            window.open(finalUrl, '_blank');
         });
     </script>
 </body>
